@@ -90,3 +90,38 @@ footer{background:var(--bg);text-align:center;padding:26px;color:var(--muted);fo
 @media (max-width:520px){.strip{grid-template-columns:1fr}.strip div:nth-child(even){border-left:0}.strip div+div{border-top:1px solid #2a4a8e}.btn{padding:13px 20px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 :focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+
+/* v2 additions */
+.hero .wrap{position:relative}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 94% 18%,rgba(120,170,255,.28) 0 30px,transparent 110px),radial-gradient(circle at 88% 58%,rgba(80,140,255,.22) 0 26px,transparent 100px),radial-gradient(circle at 99% 40%,rgba(160,200,255,.2) 0 40px,transparent 130px)}
+.map{position:absolute;left:36%;top:60px;width:48%;opacity:.4;pointer-events:none}
+.stage{overflow:hidden;padding:20px 0}
+.plant{position:absolute;left:4%;bottom:12%;width:88px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin-top:36px}
+.stats div{padding:22px;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+.stats b{display:block;font-size:40px;font-weight:800;color:var(--blue);line-height:1.1}
+.stats span{font-size:14px;color:#5b6b8c}
+.cform{display:grid;gap:14px;max-width:620px;margin:40px auto 0;text-align:left}
+.cform input,.cform textarea{width:100%;padding:15px 18px;border-radius:14px;border:1px solid #2a4a8e;background:rgba(6,20,60,.7);color:#fff;font:inherit}
+.cform input::placeholder,.cform textarea::placeholder{color:var(--muted)}
+.cform .btn{justify-self:start}
+footer{text-align:left;padding:50px 0 24px}
+.fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.fcols b{display:block;color:#fff;margin-bottom:10px;font-size:15px}
+.fcols a:not(.logo){display:block;padding:3px 0}
+.fcols a:not(.logo):hover{color:var(--cyan)}
+.fcols .logo{color:#fff;margin-bottom:12px}
+.copy{text-align:center;margin-top:36px;padding-top:20px;border-top:1px solid #12285c}
+@media (max-width:960px){
+ .map{left:6%;top:40px;width:90%}
+ .laptop{width:86%}
+ .screen{transform:rotateY(-8deg) rotateX(3deg)}
+ .base{transform:none;margin:0 -2%}
+ .mug{right:5%;bottom:8%;width:58px;height:70px}
+ .mug::after{display:none}
+ .plant{width:56px;left:3%}
+ .orbit{width:100%}
+ .glow{width:300px;height:300px}
+ .fcols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){.fcols{grid-template-columns:1fr}}
