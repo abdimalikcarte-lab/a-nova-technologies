@@ -1,142 +1,646 @@
 <!DOCTYPE html>
-<html lang="so">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nova Technologies</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<svg width="0" height="0" style="position:absolute"><defs>
-<symbol id="n" viewBox="0 0 64 56"><path fill="#0a84ff" d="M0 56V8Q0 0 9 3l22 14v12L14 18v38zM64 0v48q0 8-9 5L33 39V27l17 11V0z"/><path fill="#38b6ff" d="M14 56 50 0h14L28 56z" opacity=".9"/></symbol>
-<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-</defs></svg>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<header><div class="wrap"><nav>
- <a class="logo" href="#home"><svg width="46" height="40"><use href="#n"/></svg><span><b>NOVA</b><small>TECHNOLOGIES</small></span></a>
- <ul id="links">
-  <li><a class="on" href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services <svg width="12" height="12" viewBox="0 0 12 12" style="display:inline;vertical-align:middle"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#process">Our Process</a></li><li><a href="#contact">Contact Us</a></li>
- </ul>
- <a class="btn" href="#contact">Get Started <svg width="18" height="18"><use href="#arrow"/></svg></a>
- <button class="menu" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</nav></div></header>
+  <title>Nova Technologies | Digital Solutions & Software Development</title>
+
+  <meta name="description" content="Nova Technologies builds modern websites, management systems, mobile applications and digital solutions for businesses and institutions in Somaliland, Somalia and Ethiopia.">
+
+  <meta name="keywords" content="Nova Technologies, software development, web development, Somaliland, hospital management system, school management system, e-government, mobile apps">
+
+  <meta name="author" content="Nova Technologies">
+  <meta name="theme-color" content="#030b1f">
+
+  <meta property="og:title" content="Nova Technologies | We Build Digital Solutions">
+  <meta property="og:description" content="Modern websites and powerful management systems for a smarter Somaliland.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://a-nova-technologies.onrender.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<!-- SVG ICONS -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="n" viewBox="0 0 64 56">
+      <path fill="#0a84ff" d="M0 56V8Q0 0 9 3l22 14v12L14 18v38zM64 0v48q0 8-9 5L33 39V27l17 11V0z"/>
+      <path fill="#38b6ff" d="M14 56 50 0h14L28 56z" opacity=".9"/>
+    </symbol>
+
+    <symbol id="arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+
+      <a class="logo" href="#home" aria-label="Nova Technologies homepage">
+        <svg width="46" height="40" aria-hidden="true">
+          <use href="#n"></use>
+        </svg>
+        <span>
+          <b>NOVA</b>
+          <small>TECHNOLOGIES</small>
+        </span>
+      </a>
+
+      <ul id="links">
+        <li><a class="on" href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" style="display:inline;vertical-align:middle">
+            <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      <a class="btn" href="#contact">
+        Get Started
+        <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg>
+      </a>
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="links">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+    </nav>
+  </div>
+</header>
 
 <main>
+
+<!-- HERO SECTION -->
 <section class="hero" id="home">
-<svg class="map" viewBox="0 0 600 300" aria-hidden="true"><defs><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#6fa8ff"/></pattern><clipPath id="land"><path d="M60 40L170 30 210 70 180 120 140 150 110 120 70 90z"/><path d="M160 160L210 170 220 220 190 280 170 230z"/><path d="M280 50L340 45 360 80 310 90z"/><path d="M290 100L360 100 380 170 340 250 305 180z"/><path d="M360 40L520 50 560 110 480 140 420 120 370 90z"/><path d="M470 200L540 205 535 245 480 240z"/></clipPath></defs><rect width="600" height="300" fill="url(#dots)" clip-path="url(#land)"/></svg><div class="wrap">
- <div class="grid">
-  <div>
-   <span class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="#38b6ff"><path d="M12 1l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg></span>
-   <h1>We Build <span>Digital</span> Solutions.</h1>
-   <p class="lead">Modern websites and powerful management systems for a smarter Somaliland.</p>
-   <div class="cta">
-    <a class="btn" href="#services">Explore Our Services <svg width="18" height="18"><use href="#arrow"/></svg></a>
-    <a class="btn ghost" href="#about"><svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="12" fill="#fff"/><path d="M10.5 8.5l7 4.5-7 4.5z" fill="#030b1f"/></svg>Watch Our Story</a>
-   </div>
+
+  <svg class="map" viewBox="0 0 600 300" aria-hidden="true">
+    <defs>
+      <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="1.6" fill="#6fa8ff"/>
+      </pattern>
+
+      <clipPath id="land">
+        <path d="M60 40L170 30 210 70 180 120 140 150 110 120 70 90z"/>
+        <path d="M160 160L210 170 220 220 190 280 170 230z"/>
+        <path d="M280 50L340 45 360 80 310 90z"/>
+        <path d="M290 100L360 100 380 170 340 250 305 180z"/>
+        <path d="M360 40L520 50 560 110 480 140 420 120 370 90z"/>
+        <path d="M470 200L540 205 535 245 480 240z"/>
+      </clipPath>
+    </defs>
+
+    <rect width="600" height="300" fill="url(#dots)" clip-path="url(#land)"/>
+  </svg>
+
+  <div class="wrap">
+    <div class="grid">
+
+      <div>
+        <span class="badge" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#38b6ff">
+            <path d="M12 1l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/>
+          </svg>
+        </span>
+
+        <h1>We Build <span>Digital</span> Solutions.</h1>
+
+        <p class="lead">
+          Modern websites and powerful management systems for a smarter Somaliland.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#services">
+            Explore Our Services
+            <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg>
+          </a>
+
+          <a class="btn ghost" href="#about">
+            <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+              <circle cx="13" cy="13" r="12" fill="#fff"/>
+              <path d="M10.5 8.5l7 4.5-7 4.5z" fill="#030b1f"/>
+            </svg>
+            Watch Our Story
+          </a>
+        </div>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="orbit"></div>
+
+        <div class="laptop">
+          <div class="screen">
+            <div class="logo">
+              <svg width="86" height="74"><use href="#n"></use></svg>
+              <span style="text-align:center">
+                <b style="font-size:30px;letter-spacing:.06em">NOVA</b>
+                <small>TECHNOLOGIES</small>
+              </span>
+            </div>
+          </div>
+          <div class="base"></div>
+        </div>
+
+        <div class="mug">
+          <svg width="34" height="30"><use href="#n"></use></svg>
+        </div>
+
+        <svg class="plant" viewBox="0 0 90 130">
+          <path d="M45 85C20 70 12 40 30 20c8 18 14 35 15 65zM45 85C42 55 50 25 66 8c10 22 2 52-21 77zM45 85C60 70 82 66 88 48 66 46 52 62 45 85z" fill="#2f8f4e"/>
+          <path d="M22 85h46l-6 40H28z" fill="#e8edf5"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- FEATURE STRIP -->
+    <div class="strip">
+
+      <div>
+        <svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="6" width="40" height="28" rx="3"/>
+          <path d="M18 40h12M24 34v6M19 15l-5 6 5 6M29 15l5 6-5 6M26 13l-4 16"/>
+        </svg>
+        <span><b>Web Development</b><small>Modern &amp; Responsive</small></span>
+      </div>
+
+      <div>
+        <svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 4h8l1.5 5 4 2 5-2 4 7-4 3.5v4l4 3.5-4 7-5-2-4 2L28 44h-8l-1.5-5-4-2-5 2-4-7 4-3.5v-4L5.5 18l4-7 5 2 4-2z"/>
+          <circle cx="24" cy="24" r="6"/>
+        </svg>
+        <span><b>Management Systems</b><small>Automate Your Workflow</small></span>
+      </div>
+
+      <div>
+        <svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/>
+          <path d="M17 24l5 5 9-10"/>
+        </svg>
+        <span><b>Security First</b><small>Built with Trust</small></span>
+      </div>
+
+      <div>
+        <svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 28v-6a16 16 0 0132 0v6"/>
+          <rect x="5" y="26" width="8" height="12" rx="3"/>
+          <rect x="35" y="26" width="8" height="12" rx="3"/>
+          <path d="M39 38c0 4-4 6-9 6"/>
+        </svg>
+        <span><b>Ongoing Support</b><small>Always Here for You</small></span>
+      </div>
+
+    </div>
   </div>
-  <div class="stage" aria-hidden="true">
-   <div class="glow"></div><div class="orbit"></div>
-   <div class="laptop">
-    <div class="screen"><div class="logo"><svg width="86" height="74"><use href="#n"/></svg><span style="text-align:center"><b style="font-size:30px;letter-spacing:.06em">NOVA</b><small>TECHNOLOGIES</small></span></div></div>
-    <div class="base"></div>
-   </div>
-   <div class="mug"><svg width="34" height="30"><use href="#n"/></svg></div>
-   <svg class="plant" viewBox="0 0 90 130"><path d="M45 85C20 70 12 40 30 20c8 18 14 35 15 65zM45 85C42 55 50 25 66 8c10 22 2 52-21 77zM45 85C60 70 82 66 88 48 66 46 52 62 45 85z" fill="#2f8f4e"/><path d="M22 85h46l-6 40H28z" fill="#e8edf5"/></svg>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="light" id="about">
+  <div class="wrap">
+
+    <div class="bar"></div>
+    <h2>About Us</h2>
+
+    <p class="sub">
+      Nova Technologies is a software agency building websites and management systems for Somaliland, Somalia and Ethiopia. We help hospitals, schools and government offices work faster and keep their data safe.
+    </p>
+
+    <div class="stats">
+      <div><b>3</b><span>Countries we serve</span></div>
+      <div><b>8</b><span>Services</span></div>
+      <div><b>3</b><span>Ready systems</span></div>
+      <div><b>100%</b><span>Mobile friendly</span></div>
+    </div>
+
+    <h3 style="margin-top:50px">Why choose us</h3>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Local focus</h3>
+        <p>Built for the way offices and institutions in the region work.</p>
+      </div>
+
+      <div class="card">
+        <h3>Secure by design</h3>
+        <p>Role-based accounts, backups and protected data.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI-powered</h3>
+        <p>Automation that removes repeated manual work.</p>
+      </div>
+
+      <div class="card">
+        <h3>After-launch support</h3>
+        <p>Training and fixes whenever you need them.</p>
+      </div>
+    </div>
+
   </div>
- </div>
- <div class="strip">
-  <div><svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="40" height="28" rx="3"/><path d="M18 40h12M24 34v6M19 15l-5 6 5 6M29 15l5 6-5 6M26 13l-4 16"/></svg><span><b>Web Development</b><small>Modern &amp; Responsive</small></span></div>
-  <div><svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M20 4h8l1.5 5 4 2 5-2 4 7-4 3.5v4l4 3.5-4 7-5-2-4 2L28 44h-8l-1.5-5-4-2-5 2-4-7 4-3.5v-4L5.500 18l4-7 5 2 4-2z"/><circle cx="24" cy="24" r="6"/></svg><span><b>Management Systems</b><small>Automate Your Workflow</small></span></div>
-  <div><svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg><span><b>Security First</b><small>Built with Trust</small></span></div>
-  <div><svg class="ico" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28v-6a16 16 0 0132 0v6"/><rect x="5" y="26" width="8" height="12" rx="3"/><rect x="35" y="26" width="8" height="12" rx="3"/><path d="M39 38c0 4-4 6-9 6"/></svg><span><b>Ongoing Support</b><small>Always Here for You</small></span></div>
- </div>
-</div></section>
+</section>
 
-<section class="light" id="services"><div class="wrap">
- <div class="bar"></div><h2>Our Services</h2>
- <p class="sub">Everything your organization needs to work online, from a first website to a full management system.</p>
- <div class="cards">
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div><h3>Websites</h3><p>Fast, mobile-friendly websites for businesses, schools and institutions.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div><h3>Government Systems</h3><p>Digital records, registration and reporting for public offices.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V8M8 12H4a2 2 0 01-2-2V6h6M16 12h4a2 2 0 002-2V6h-6M9 21h6M10 3h4v5h-4z"/></svg></div><h3>Hospital Management</h3><p>Patients, staff, billing and pharmacy in one secure system.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7.500L22 12l-7.500 2.500L12 22l-2.500-7.500L2 12l7.500-2.500z"/></svg></div><h3>AI Automation</h3><p>Smart tools that cut repeated work and speed up decisions.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5zM6 12v5c3 2.5 9 2.5 12 0v-5"/></svg></div><h3>School Management</h3><p>Students, teachers, attendance, exams and fees in one place.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3 4 6.5 4 10s-1 7-4 10c-3-3-4-6.5-4-10s1-7 4-10z"/></svg></div><h3>E-Government Websites</h3><p>Official portals where citizens find services and apply online.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Mobile Apps</h3><p>Android and iOS apps that connect to your system.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v7c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Hosting &amp; Security</h3><p>Secure hosting, backups and protection for your data.</p></div>
-  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0118 0v6"/><rect x="2" y="15" width="5" height="6" rx="2"/><rect x="17" y="15" width="5" height="6" rx="2"/></svg></div><h3>Training &amp; Support</h3><p>We train your staff and fix problems fast.</p></div>
- </div>
-</div></section>
+<!-- SERVICES SECTION -->
+<section class="light" id="services">
+  <div class="wrap">
 
-<section class="light" id="about" style="padding-top:0"><div class="wrap">
- <div class="bar"></div><h2>About Us</h2>
- <p class="sub">Nova Technologies is a software agency building websites and management systems for Somaliland, Somalia and Ethiopia. We help hospitals, schools and government offices work faster and keep their data safe.</p>
- <div class="stats"><div><b>3</b><span>Countries we serve</span></div><div><b>8</b><span>Services</span></div><div><b>3</b><span>Ready systems</span></div><div><b>100%</b><span>Mobile friendly</span></div></div>
- <h3 style="margin-top:50px">Why choose us</h3>
- <div class="cards">
-  <div class="card"><h3>Local focus</h3><p>Built for the way offices and institutions in the region work.</p></div>
-  <div class="card"><h3>Secure by design</h3><p>Role-based accounts, backups and protected data.</p></div>
-  <div class="card"><h3>AI-powered</h3><p>Automation that removes repeated manual work.</p></div>
-  <div class="card"><h3>After-launch support</h3><p>Training and fixes whenever you need them.</p></div>
- </div>
-</div></section>
+    <div class="bar"></div>
+    <h2>Our Services</h2>
 
-<section class="light" id="portfolio" style="padding-top:0"><div class="wrap">
- <div class="bar"></div><h2>Portfolio</h2>
- <div class="cards">
-  <div class="card proj"><div class="thumb"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 7v10M7 12h10"/></svg></div><div class="body"><span class="tag">Sample project</span><h3>Hospital Management System</h3><p>Patients, doctors, appointments, pharmacy and billing, with separate accounts for each role.</p></div></div>
-  <div class="card proj"><div class="thumb"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5zM6 12v5c3 2.5 9 2.5 12 0v-5"/></svg></div><div class="body"><span class="tag">Sample project</span><h3>School Management System</h3><p>Student records, attendance, exam results, fees and parent reports.</p></div></div>
-  <div class="card proj"><div class="thumb"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M9 11h6"/></svg></div><div class="body"><span class="tag">Sample project</span><h3>E-Government Website</h3><p>A public portal with news, services, online forms and document downloads.</p></div></div>
- </div>
-</div></section>
+    <p class="sub">
+      We deliver advanced digital solutions that help businesses,
+      institutions and organizations grow, automate and operate securely.
+    </p>
 
-<section class="light" id="process" style="padding-top:0"><div class="wrap">
- <div class="bar"></div><h2>Our Process</h2>
- <div class="steps">
-  <div class="step"><b>Discover</b><span>We listen and define your needs.</span></div>
-  <div class="step"><b>Design</b><span>You approve the look and flow.</span></div>
-  <div class="step"><b>Build</b><span>We develop and test everything.</span></div>
-  <div class="step"><b>Launch &amp; support</b><span>We go live and stay with you.</span></div>
- </div>
-</div></section>
+    <div class="cards">
 
-<section class="contact" id="contact"><div class="wrap">
- <h2>Let’s build your digital solution</h2>
- <p>Send us a message and we will reply with a plan and a quote.</p>
- <a class="btn" href="mailto:info@novatech.so">Get Started <svg width="18" height="18"><use href="#arrow"/></svg></a>
- <div class="ccards">
-  <div class="cc"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg><span><small>Email</small><b>info@novatech.so</b></span></div>
-  <div class="cc"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17v3a2 2 0 01-2.200 2 19.800 19.800 0 01-8.600-3.100 19.500 19.500 0 01-6-6A19.800 19.800 0 012.100 4.200 2 2 0 014.100 2h3a2 2 0 012 1.700c.1 1 .4 1.900.7 2.800a2 2 0 01-.5 2.100L8.100 9.900a16 16 0 006 6l1.300-1.300a2 2 0 012.100-.4c.9.300 1.800.6 2.800.7a2 2 0 011.700 2z"/></svg><span><small>Phone</small><b>+252 63 8957597</b></span></div>
-  <div class="cc"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg><span><small>Address</small><b>Hargeisa, Somaliland</b></span></div>
-  <div class="cc"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><small>Working hours</small><b>Sat–Thu, 8:00–17:00</b></span></div>
- </div>
- <form class="cform" action="mailto:info@novatech.so" method="post" enctype="text/plain">
-  <input name="name" placeholder="Your name" required aria-label="Your name">
-  <input name="email" type="email" placeholder="Your email" required aria-label="Your email">
-  <textarea name="message" rows="4" placeholder="Tell us about your project" required aria-label="Message"></textarea>
-  <button class="btn" type="submit">Send message <svg width="18" height="18"><use href="#arrow"/></svg></button>
- </form>
- <p class="follow">Follow us</p>
- <div class="social">
-  <a href="#" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6c0-.9.2-1.300 1.400-1.300H17V2h-2.600C11.300 2 10 3.700 10 6v2H7.500v3H10v11h4V11h2.700l.4-3z"/></svg></a>
-  <a href="#" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor"/></svg></a>
-  <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.200 2h3.300l-7.200 8.300L23 22h-6.700l-5.200-6.800L5 22H1.700l7.700-8.800L1 2h6.800l4.700 6.200zm-1.200 18h1.800L7.100 3.900H5.200z"/></svg></a>
-  <a href="#" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.500 8.500h3.800V21H4.500zM6.400 2.500a2.200 2.200 0 110 4.400 2.200 2.200 0 010-4.400zM10.500 8.500h3.600v1.700c.5-1 1.800-2 3.700-2 4 0 4.700 2.600 4.700 6V21h-3.800v-5.800c0-1.400 0-3.200-2-3.200s-2.300 1.500-2.300 3.100V21h-3.900z"/></svg></a>
-  <a href="#" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.200a3 3 0 00-2.100-2.100C18 5.600 12 5.600 12 5.600s-6 0-7.900.5A3 3 0 002 8.200C1.500 10 1.500 12 1.500 12s0 2 .5 3.800a3 3 0 002.100 2.100c1.900.5 7.900.5 7.900.5s6 0 7.900-.5a3 3 0 002.100-2.100c.5-1.800.5-3.800.5-3.800s0-2-.5-3.800zM10 15V9l5.200 3z"/></svg></a>
-  <a href="#" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.700-5A9 9 0 1112 21a9 9 0 01-4.300-1.100z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 .8c-.8-.4-1.600-1.200-2-2l.8-1-1-2z"/></svg></a>
- </div>
-</div></section>
+      <!-- 1. AI & AUTOMATION -->
+      <div class="card">
+        <div class="ico">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/>
+          </svg>
+        </div>
+
+        <h3>AI &amp; Automation</h3>
+        <p>
+          Intelligent AI solutions that automate tasks,
+          streamline operations and improve business productivity.
+        </p>
+
+        <ul>
+          <li>AI Voice Assistants</li>
+          <li>Document Automation</li>
+          <li>AI Business Analytics</li>
+        </ul>
+      </div>
+
+      <!-- 2. FINTECH SOLUTIONS -->
+      <div class="card">
+        <div class="ico">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <path d="M2 10h20M7 15h3"/>
+          </svg>
+        </div>
+
+        <h3>FinTech Solutions</h3>
+        <p>
+          Modern financial technology that simplifies
+          digital payments and financial operations.
+        </p>
+
+        <ul>
+          <li>Online Payment Integration</li>
+          <li>Digital Invoicing</li>
+          <li>Payment Tracking</li>
+          <li>Financial Management Systems</li>
+        </ul>
+      </div>
+
+      <!-- 3. CLOUD & CYBERSECURITY -->
+      <div class="card">
+        <div class="ico">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 16.2A4.5 4.5 0 0018 7.5h-1.2A6 6 0 005.3 9.2 4 4 0 006 17h13"/>
+            <path d="M12 12v7M9 16l3 3 3-3"/>
+          </svg>
+        </div>
+
+        <h3>Cloud &amp; Cybersecurity</h3>
+        <p>
+          Reliable cloud infrastructure and advanced security
+          solutions to protect your digital assets.
+        </p>
+
+        <ul>
+          <li>Cloud Hosting</li>
+          <li>Data Backup</li>
+          <li>Cybersecurity Audits</li>
+          <li>Cloud Migration</li>
+        </ul>
+      </div>
+
+      <!-- 4. DIGITAL PRODUCT DEVELOPMENT -->
+      <div class="card">
+        <div class="ico">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="2" width="12" height="20" rx="2"/>
+            <path d="M10 18h4M2 7h2M2 12h2M2 17h2M20 7h2M20 12h2M20 17h2"/>
+          </svg>
+        </div>
+
+        <h3>Digital Product Development</h3>
+        <p>
+          Custom-built digital products and software applications
+          designed to meet your organization's needs.
+        </p>
+
+        <ul>
+          <li>Android &amp; iOS Applications</li>
+          <li>E-commerce Platforms</li>
+          <li>Custom Enterprise Software</li>
+          <li>API Development</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section class="light" id="portfolio">
+  <div class="wrap">
+
+    <div class="bar"></div>
+    <h2>Portfolio</h2>
+
+    <div class="cards">
+
+      <div class="card proj">
+        <div class="thumb">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3"/>
+            <path d="M12 7v10M7 12h10"/>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="tag">Sample project</span>
+          <h3>Hospital Management System</h3>
+          <p>Patients, doctors, appointments, pharmacy and billing, with separate accounts for each role.</p>
+        </div>
+      </div>
+
+      <div class="card proj">
+        <div class="thumb">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 10L12 5 2 10l10 5zM6 12v5c3 2.5 9 2.5 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="tag">Sample project</span>
+          <h3>School Management System</h3>
+          <p>Student records, attendance, exam results, fees and parent reports.</p>
+        </div>
+      </div>
+
+      <div class="card proj">
+        <div class="thumb">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M9 11h6"/>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="tag">Sample project</span>
+          <h3>E-Government Website</h3>
+          <p>A public portal with news, services, online forms and document downloads.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+<section class="light" id="process">
+  <div class="wrap">
+
+    <div class="bar"></div>
+    <h2>Our Process</h2>
+
+    <div class="steps">
+      <div class="step">
+        <b>Discover</b>
+        <span>We listen and define your needs.</span>
+      </div>
+
+      <div class="step">
+        <b>Design</b>
+        <span>You approve the look and flow.</span>
+      </div>
+
+      <div class="step">
+        <b>Build</b>
+        <span>We develop and test everything.</span>
+      </div>
+
+      <div class="step">
+        <b>Launch &amp; support</b>
+        <span>We go live and stay with you.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="wrap">
+
+    <h2>Let’s build your digital solution</h2>
+
+    <p>Send us a message and we will reply with a plan and a quote.</p>
+
+    <a class="btn" href="mailto:info@novatech.so">
+      Get Started
+      <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg>
+    </a>
+
+    <div class="ccards">
+
+      <div class="cc">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="M2 7l10 7 10-7"/>
+        </svg>
+        <span><small>Email</small><b>info@novatech.so</b></span>
+      </div>
+
+      <div class="cc">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 17v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/>
+        </svg>
+        <span><small>Phone</small><b>+252 63 8957597</b></span>
+      </div>
+
+      <div class="cc">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/>
+          <circle cx="12" cy="9" r="3"/>
+        </svg>
+        <span><small>Address</small><b>Hargeisa, Somaliland</b></span>
+      </div>
+
+      <div class="cc">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <span><small>Working hours</small><b>Sat–Thu, 8:00–17:00</b></span>
+      </div>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form class="cform" action="mailto:info@novatech.so" method="post" enctype="text/plain">
+
+      <label for="contact-name">Your name</label>
+      <input
+        id="contact-name"
+        name="name"
+        type="text"
+        placeholder="Your name"
+        autocomplete="name"
+        required>
+
+      <label for="contact-email">Your email</label>
+      <input
+        id="contact-email"
+        name="email"
+        type="email"
+        placeholder="Your email"
+        autocomplete="email"
+        required>
+
+      <label for="contact-message">Your message</label>
+      <textarea
+        id="contact-message"
+        name="message"
+        rows="4"
+        placeholder="Tell us about your project"
+        required></textarea>
+
+      <button class="btn" type="submit">
+        Send message
+        <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg>
+      </button>
+
+    </form>
+
+    <p class="follow">Follow us</p>
+
+    <div class="social">
+
+      <a href="#" aria-label="Facebook">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M14 8V6c0-.9.2-1.3 1.4-1.3H17V2h-2.6C11.3 2 10 3.7 10 6v2H7.5v3H10v11h4V11h2.7l.4-3z"/>
+        </svg>
+      </a>
+
+      <a href="#" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <a href="#" aria-label="X">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M18.2 2h3.3l-7.2 8.3L23 22h-6.7l-5.2-6.8L5 22H1.7l7.7-8.8L1 2h6.8l4.7 6.2zm-1.2 18h1.8L7.1 3.9H5.2z"/>
+        </svg>
+      </a>
+
+      <a href="#" aria-label="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4.5 8.5h3.8V21H4.5zM6.4 2.5a2.2 2.2 0 110 4.4 2.2 2.2 0 010-4.4zM10.5 8.5h3.6v1.7c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-3.8v-5.8c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21h-3.9z"/>
+        </svg>
+      </a>
+
+      <a href="#" aria-label="YouTube">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M22 8.2a3 3 0 00-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 002 8.2C1.5 10 1.5 12 1.5 12s0 2 .5 3.8a3 3 0 002.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 002.1-2.1c.5-1.8.5-3.8.5-3.8s0-2-.5-3.8zM10 15V9l5.2 3z"/>
+        </svg>
+      </a>
+
+      <a href="#" aria-label="WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 21l1.7-5A9 9 0 1112 21a9 9 0 01-4.3-1.1z"/>
+          <path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 .8c-.8-.4-1.6-1.2-2-2l.8-1-1-2z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 </main>
+
+<!-- FOOTER -->
 <footer>
- <div class="wrap fcols">
-  <div><a class="logo" href="#home"><svg width="38" height="34"><use href="#n"/></svg><span><b>NOVA</b><small>TECHNOLOGIES</small></span></a><p>Digital solutions for a smarter Somaliland.</p></div>
-  <div><b>Company</b><a href="#about">About Us</a><a href="#portfolio">Portfolio</a><a href="#process">Our Process</a></div>
-  <div><b>Services</b><a href="#services">Websites</a><a href="#services">Management Systems</a><a href="#services">E-Government</a></div>
-  <div><b>Contact</b><a href="mailto:info@novatech.so">info@novatech.so</a><a href="#contact">+252 63 8957597</a><a href="#home">Back to top ↑</a></div>
- </div>
- <p class="copy">© 2026 Nova Technologies. All rights reserved.</p>
+  <div class="wrap fcols">
+
+    <div>
+      <a class="logo" href="#home" aria-label="Nova Technologies homepage">
+        <svg width="38" height="34" aria-hidden="true"><use href="#n"></use></svg>
+        <span>
+          <b>NOVA</b>
+          <small>TECHNOLOGIES</small>
+        </span>
+      </a>
+      <p>Digital solutions for a smarter Somaliland.</p>
+    </div>
+
+    <div>
+      <b>Company</b>
+      <a href="#about">About Us</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#process">Our Process</a>
+    </div>
+
+    <div>
+      <b>Services</b>
+      <a href="#services">AI &amp; Automation</a>
+      <a href="#services">FinTech Solutions</a>
+      <a href="#services">Cloud &amp; Cybersecurity</a>
+      <a href="#services">Digital Product Development</a>
+    </div>
+
+    <div>
+      <b>Contact</b>
+      <a href="mailto:info@novatech.so">info@novatech.so</a>
+      <a href="tel:+252638957597">+252 63 8957597</a>
+      <a href="#home">Back to top ↑</a>
+    </div>
+
+  </div>
+
+  <p class="copy">© 2026 Nova Technologies. All rights reserved.</p>
 </footer>
-<script src="js/main.js"></script>
+
 </body>
 </html>
